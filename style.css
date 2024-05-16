@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+.topbutton{
+  background-color: black;
+  color: white;
+  padding: 20px 35px;
+  border-radius: 50px;
+}
+.topbutton:hover{
+  background-color: white;
+  color:black;
+  border: 1px solid black;
+}
+ul li #circle{
+  border-radius: 50%;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+.hero {
+  background-color: #f0f0f0;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #333;
+}
+
+footer {
+  background-color: #eee;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Styles for the Start a Project button */
+nav a.start-project {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: inline-block;
+}
+.cursor-dot {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  pointer-events: none; /* Makes the cursor dot not interactive */
+  transform: translate(-50%, -50%); /* Positions the dot at the center of the cursor */
+  animation: cursorBlink 1s infinite alternate;
+}
+
+@keyframes cursorBlink {
+  from { opacity: 1; }
+  to { opacity: 0.5; }
+}
+.hero h1 {
+  animation: scrollText 5s linear infinite;
+  white-space: nowrap; /* Prevents text wrap */
+  overflow: hidden; /* Hides overflowing text */
+}
+
+@keyframes scrollText {
+  from { transform: translateX(100%); } /* Starts from the right side */
+  to { transform: translateX(-100%); } /* Moves to the left side */
+}
+.image-container {
+  
+  margin: 0 10px; /* Adds horizontal spacing between images */
+  width: 20%; /* Sets the width of each image container */
+}
+
+.image-container img {
+  width: 100%; /* Ensures images fill the container width */
+  height: 100%; /* Maintains image aspect ratio */
+}
+/* Keep your existing website content styles here */
+
